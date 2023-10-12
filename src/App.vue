@@ -1,21 +1,23 @@
 <script>
-import Top from './components/top.vue'; 
-import Main from './components/main.vue'; // Ajusta la ruta de importación según tu estructura de carpetas.
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
-  components: {
-    Top,
-    Main,
+  components:{
+    'custom-header': AppHeader,
+    'custom-main': AppMain,
   }
 }
 </script>
+
 <template>
-  <div>
-    <Top/>
-    <Main/>
-  </div>
+  <custom-header/>
+  <custom-main/>
 </template>
 
+<style lang="scss">
+@use './scss/main.scss'
+</style>
 
 
 

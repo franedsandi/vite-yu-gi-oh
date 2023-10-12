@@ -1,13 +1,14 @@
 <script>
 export default {
-
-}
+  name: 'productCard',
+};
 </script>
 
 <template>
-  <h1>holi</h1>
+<h1>hola
+</h1>
 </template>
 
-<style>
-@import 'bootstrap/scss/bootstrap.scss';
+<style lang="scss" scoped>
+
 </style>
