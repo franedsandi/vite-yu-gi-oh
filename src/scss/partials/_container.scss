@@ -1,0 +1,23 @@
+.container{
+  background-color: white;
+  margin: 50px auto;
+  padding: 50px;
+  padding-bottom: 20px;
+  
+  .found{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    span{
+      color: white;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+}
