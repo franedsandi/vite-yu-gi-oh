@@ -1,63 +1,33 @@
+<template>
+  <div class="loader">
+    <img src="img/logo.png" alt="Loader">
+  </div>
+</template>
+
 <script>
 export default {
   name: "loader",
- 
-  data(){
-    return{
+  data() {
+    return {
       isLoading: true
     }
   },
   methods: {
-    stopLoad(){
+    stopLoad() {
       this.isLoading = false;
     }
   }
- 
 }
-
 </script>
 
-<template>
-
-  <span class="loader"></span>
-
-</template>
-
-
-
-<style>
-
+<style scoped lang="scss">
 .loader {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #FFF;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-}
-.loader::after,
-.loader::before {
-  content: '';  
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #FF3D00;
-  width: 6px;
-  height: 6px;
-  transform: translate(150%, 150%);
-  border-radius: 50%;
-}
-.loader::before {
-  left: auto;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  transform: translate(-150%, -150%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotation 5s linear infinite;
 }
 
 @keyframes rotation {
@@ -67,6 +37,5 @@ export default {
   100% {
     transform: rotate(360deg);
   }
-} 
-
+}
 </style>
