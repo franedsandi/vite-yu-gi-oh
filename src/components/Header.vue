@@ -1,4 +1,3 @@
-
 <script>
 export default {
   name: "Header"
@@ -20,5 +19,11 @@ export default {
 
 
 <style lang="scss" scoped>
-@use '../scss/partials/header'
+.header{
+  background-color:white;
+  .container{
+    padding:0;
+  }
+
+}
 </style>

@@ -1,9 +1,7 @@
 <script>
-
 export default {
-  name: "single-card",
-
-  props: {
+name: 'singlecard',
+props: {
     imgObj: String,
     titleObj: String,
     typeObj: String
@@ -12,18 +10,35 @@ export default {
 </script>
 
 <template>
-
-    <div class="card-custom">
+  <div class="konamicard">
+    <div class="custom-card">
       <img :src="imgObj">
       <h5> {{ titleObj }} </h5>
-      <h6> {{ typeObj }} </h6>
+      <h5> {{ typeObj }} </h5>
     </div>
-
-
+  </div>
+  
 </template>
 
 
 
 <style lang="scss" scoped>
-@use '../../scss/partials/card.scss'
+@use '../../scss/partials/vars.scss';
+.konamicard{
+  width: calc(100% / 5 - 10px);
+  padding: 0;
+  margin-bottom: 20px;
+  .custom-card{
+    text-align: center;
+    background-color: #D48F38;
+
+    height: 460px;
+    img{
+      width: 100%;
+    }
+    h5{
+      margin-top: 20px;
+    }
+  }
+}
 </style>
